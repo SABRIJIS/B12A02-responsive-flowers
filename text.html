@@ -263,6 +263,297 @@
         }
 
 
+           { margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        
+        .plants-lover {
+            padding: 5rem 2rem;
+            background-color: #fff;
+        }
+
+        .plants-lover-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            position: relative;
+        }
+
+       
+        .plants-image-container {
+            flex: 1;
+            position: relative;
+        }
+
+        .plants-image {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .trusted-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+    
+            
+            padding: 0.5rem 1rem 0.5rem 0.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        
+        .plants-content {
+            flex: 1;
+        }
+
+        .plants-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .plants-list {
+            list-style-type: none;
+        }
+
+        .plants-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .plants-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #6e8efb;
+        }
+
+        
+        @media (max-width: 768px) {
+            .plants-lover-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .plants-content {
+                order: 2;
+                text-align: left;
+                padding: 0 1rem;
+            }
+
+            .plants-image-container {
+                order: 1;
+                width: 100%;
+            }
+
+            .plants-title {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .trusted-badge {
+                display: none; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .plants-lover {
+                padding: 3rem 1rem;
+            }
+
+            .plants-title {
+                font-size: 1.8rem;
+            }
+        }
+
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        
+        .deals-section {
+            padding: 5rem 2rem;
+            background-color: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        
+        .deals-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        
+        .deal-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .deal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .deal-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            z-index: 2;
+        }
+
+        .deal-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .deal-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .deal-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .shop-now-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .shop-now-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(110, 142, 251, 0.4);
+        }
+
+        
+        .mobile-deals {
+            display: none;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .mobile-deal-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        
+        @media (max-width: 992px) {
+            .deals-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .deals-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .deals-grid {
+                display: none;
+            }
+
+            .mobile-deals {
+                display: block;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .deals-section {
+                padding: 2rem 1rem;
+            }
+        }
+
+
 
     </style>
    
@@ -439,8 +730,84 @@
         </div>
     </section>
 
+ <section class="plants-lover">
+        <div class="plants-lover-container">
+            <div class="plants-image-container">
+                <img src="B12A02-Responsive-Flowers/assets/flower-store.png" 
+                     alt="Happy plant lover" 
+                     class="plants-image">
+                <div class="trusted-badge">
+                    <img src="B12A02-Responsive-Flowers/assets/trusted-badge.png" 
+                         alt="Trusted badge icon"
+                         aria-hidden="true">
+                    
+                </div>
+            </div>
+
+            <div class="plants-content">
+                <h2 class="plants-title">Plant Lover Badge</h2>
+                <ul class="plants-list">
+                    <li>At our flower shop, we believe every bloom carries a message — of love, joy, comfort, or celebration. Whether you're looking for a single rose to say "I'm thinking of you" or a bouquet to brighten someone’s day, we’re here to help you express it beautifully. Handpicked with care and arranged with passion, our flowers are more than just petals — they’re emotions in bloom.</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="deals-section">
+        <div class="section-header">
+            <h2 class="section-title">Latest Deals</h2>
+            <p class="section-subtitle">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers.
+            </p>
+        </div>
+
+    
+        <div class="deals-grid">
+            
+            <div class="deal-card">
+                <div class="deal-badge">60% Off</div>
+                <img src="B12A02-Responsive-Flowers/assets/deal-bloom.png" alt="Bloom Plant" class="deal-image">
+                <div class="deal-info">
+                    <h3 class="deal-name">Bloom Plant</h3>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            
+            <div class="deal-card">
+                <div class="deal-badge">25% Off</div>
+                <img src="B12A02-Responsive-Flowers/assets/deal-zabo.png" alt="Zabo Plant" class="deal-image">
+                <div class="deal-info">
+                    <h3 class="deal-name">Zabo Plant</h3>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            
+            <div class="deal-card">
+                <div class="deal-badge">30% Off</div>
+                <img src="B12A02-Responsive-Flowers/assets/deal-ana.png" alt="Ana Plant" class="deal-image">
+                <div class="deal-info">
+                    <h3 class="deal-name">Ana Plant</h3>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="mobile-deals">
+            <div class="mobile-deal-card">
+                <div class="deal-badge">60% Off</div>
+                <img src="B12A02-Responsive-Flowers/assets/deal-ana.png" alt="Bloom Plant" class="deal-image">
+                <div class="deal-info">
+                    <h3 class="deal-name">Bloom Plant</h3>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
