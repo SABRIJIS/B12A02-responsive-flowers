@@ -57,17 +57,7 @@
             margin-bottom: 2rem;
         }
 
-        .banner-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(110, 142, 251, 0.3);
-        }
+       
 
         .banner-btn:hover {
             transform: translateY(-3px);
@@ -133,6 +123,147 @@
                 font-size: 1.8rem;
             }
         }
+
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+
+        .plants-section {
+            padding: 5rem 2rem;
+            background-color: #fff;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        
+        .plants-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        
+        .plant-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .plant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .plant-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .plant-info {
+            padding: 1.5rem;
+        }
+
+        .plant-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .plant-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #6e8efb;
+            margin-bottom: 1rem;
+        }
+
+        .add-to-cart {
+            display: block;
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #6e8efb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #5a7df4;
+        }
+
+    
+        @media (max-width: 992px) {
+            .plants-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .plants-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .plants-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .plants-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 350px;
+            }
+
+            .plants-section {
+                padding: 2rem 1rem;
+            }
+        }
+
+
+
     </style>
    
 </head>
@@ -210,13 +341,106 @@
                 <p class="banner-text">
                     Explore our carefully curated collection of high-quality flowers designed to make your special ones feel special. With free shipping on all orders and a 30-day return policy, shopping with us is risk-free.
                 </p>
-                <a href="#" class="banner-btn">Shop Now</a>
+               
             </div>
             <div class="banner-image">
                 <img src="/B12A02-Responsive-Flowers/assets/hero-flower.png"alt="Flower Image">
             </div>
         </div>
     </section>
+
+ <section class="plants-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Plants</h2>
+            <p class="section-subtitle">
+                Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers.
+            </p>
+        </div>
+
+        <div class="plants-grid">
+            
+            <div class="plant-card">
+                <img src="B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+           
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+           
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+
+            
+            <div class="plant-card">
+                <img src="/B12A02-Responsive-Flowers/assets/sample-flower-image.png" alt="Lily Blossom" class="plant-image">
+                <div class="plant-info">
+                    <h3 class="plant-name">Lily Blossom</h3>
+                    <p class="plant-price">20 USD</p>
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
 </body>
 </html>
