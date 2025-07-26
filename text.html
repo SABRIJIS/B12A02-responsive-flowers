@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com">
 
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
 
@@ -402,13 +403,13 @@
         }
 
         body {
-            background-color: #f8f9fa;
+            background-color: #fdfeff;
         }
 
         
         .deals-section {
             padding: 5rem 2rem;
-            background-color: white;
+            background-color:white;
         }
 
         .section-header {
@@ -443,7 +444,7 @@
 
         
         .deal-card {
-            background: white;
+            background: rgb(255, 253, 253);
             border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -453,7 +454,7 @@
 
         .deal-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgb(255, 253, 253);
         }
 
         .deal-badge {
@@ -461,7 +462,7 @@
             top: 15px;
             left: 15px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 0.25rem 1rem;
             border-radius: 50px;
             font-weight: 700;
@@ -490,7 +491,7 @@
         .shop-now-btn {
             display: inline-block;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
+            color: rgb(59, 137, 255);
             padding: 0.6rem 1.5rem;
             border-radius: 50px;
             text-decoration: none;
@@ -511,7 +512,7 @@
         }
 
         .mobile-deal-card {
-            background: white;
+            background: rgb(255, 255, 255);
             border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -638,7 +639,7 @@
             transform: translateY(-2px);
         }
 
-        /* Responsive Styles */
+       
         @media (max-width: 768px) {
             .join-section {
                 height: 350px;
@@ -680,6 +681,107 @@
                 max-width: 300px;
             }
         }
+
+ footer {
+            background-color: white;
+            padding: 4rem 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo p {
+            color: var(--text-medium);
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            flex: 2;
+        }
+
+        .link-column {
+            min-width: 120px;
+        }
+
+        .link-column h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1.2rem;
+        }
+
+        .link-column ul {
+            list-style: none;
+        }
+
+        .link-column li {
+            margin-bottom: 0.8rem;
+        }
+
+        .link-column a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link-column a:hover {
+            color: var(--primary);
+        }
+
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .footer-links {
+                gap: 2rem;
+            }
+
+            .link-column {
+                min-width: calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                padding: 3rem 1.5rem;
+            }
+
+            .link-column {
+                min-width: 100%;
+            }
+
+            .link-column h3 {
+                margin-bottom: 1rem;
+            }
+        }
+
+
+
 
     </style>
    
@@ -871,9 +973,9 @@
             </div>
 
             <div class="plants-content">
-                <h2 class="plants-title">Plant Lover Badge</h2>
+                <h2 class="plants-title">Flower &Plant Lover</h2>
                 <ul class="plants-list">
-                    <li>At our flower shop, we believe every bloom carries a message — of love, joy, comfort, or celebration. Whether you're looking for a single rose to say "I'm thinking of you" or a bouquet to brighten someone’s day, we’re here to help you express it beautifully. Handpicked with care and arranged with passion, our flowers are more than just petals — they’re emotions in bloom.</li>
+                    <P>At our flower shop, we believe every bloom carries a message — of love, joy, comfort, or celebration. Whether you're looking for a single rose to say "I'm thinking of you" or a bouquet to brighten someone’s day, we’re here to help you express it beautifully. Handpicked with care and arranged with passion, our flowers are more than just petals — they’re emotions in bloom.</P>
                     
                 </ul>
             </div>
@@ -920,18 +1022,7 @@
                     <a href="#" class="shop-now-btn">Shop Now</a>
                 </div>
             </div>
-        </div>
-
         
-        <div class="mobile-deals">
-            <div class="mobile-deal-card">
-                <div class="deal-badge">60% Off</div>
-                <img src="B12A02-Responsive-Flowers/assets/deal-ana.png" alt="Bloom Plant" class="deal-image">
-                <div class="deal-info">
-                    <h3 class="deal-name">Bloom Plant</h3>
-                    <a href="#" class="shop-now-btn">Shop Now</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -948,7 +1039,58 @@
     </section>
 
 
+<footer class="bg-gray-50 text-gray-700 px-6 py-10">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
+
+    <div class="space-y-3">
+      <div class="flex items-center space-x-2">
+       
+        <span class="text-xl font-semibold text-black-500">FlowerLy</span>
+      </div>
+      <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+    </div>
+
+    
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="space-y-2">
+        <a href="#" class="hover:text-orange-500 block">Home</a>
+        <a href="#" class="hover:text-orange-500 block">About Us</a>
+        <a href="#" class="hover:text-orange-500 block">Blog</a>
+        <a href="#" class="hover:text-orange-500 block">FAQ</a>
+        <a href="#" class="hover:text-orange-500 block">Contact Us</a>
+      </div>
+      <div class="space-y-2">
+        <a href="#" class="hover:text-orange-500 block">Features</a>
+        <a href="#" class="hover:text-orange-500 block">Pricing</a>
+        <a href="#" class="hover:text-orange-500 block">Privacy Policy</a>
+        <a href="#" class="hover:text-orange-500 block">Terms of Service</a>
+        <a href="#" class="hover:text-orange-500 block">Help Center</a>
+      </div>
+    </div>
+
+
+    <div class="flex md:justify-end items-center space-x-4">
+      <a href="#" class="text-blue-700 hover:scale-110 transition">
+        
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="#" class="text-black hover:scale-110 transition">
+        
+        <i class="fab fa-x-twitter fa-lg"></i>
+      </a>
+      <a href="#" class="text-blue-500 hover:scale-110 transition">
+        
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="#" class="text-red-600 hover:scale-110 transition">
+        
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
 
 
 </body>
